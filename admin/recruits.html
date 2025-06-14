@@ -156,15 +156,16 @@
 			</div>
 		</div>
 	</header>
+	
 
     <section>
 
 		<div class="main-content">
 			<!-- Search Bar -->
 			<div class="filter-bar">
-				<!-- <button class="filter-button" onclick="toggleDropdown('filterDropdown')">Filter <i class="fas fa-chevron-down"></i></button>
+				 <button class="filter-button" onclick="toggleDropdown('filterDropdown')">Filter <i class="fas fa-chevron-down"></i></button>
 				<button class="filter-button" onclick="toggleDropdown('domainDropdown')">Domain <i class="fas fa-chevron-down"></i></button>
-				<button class="filter-button" onclick="toggleDropdown('yearDropdown')">Year <i class="fas fa-chevron-down"></i></button> -->
+				<button class="filter-button" onclick="toggleDropdown('yearDropdown')">Year <i class="fas fa-chevron-down"></i></button> 
 				<button 
   disabled 
   style="font-family: Arial, sans-serif; border: none; border-radius: 8px; padding: 10px 20px; margin: 10px; font-size: 16px; cursor: not-allowed; transition: all 0.3s ease; background-color: #d3d3d3; color: #6c757d; height: 50px; width: auto; display: flex; align-items: center; justify-content: center;"
@@ -193,17 +194,19 @@
 				  <label><input type="radio" class="domain" name="domain" value="robotics"> Robotics</label>
 				  <label><input type="radio" class="domain" name="domain" value="aero"> Aeromodelling</label>
 				  <label><input type="radio" class="domain" name="domain" value="media"> Media</label>
-				  <label><input type="radio" class="domain" name="all" value="All">All</label>
+				  <!-- <label><input type="radio" class="domain" name="all" value="All">All</label> -->
 				  <span class="clear" onclick="clearSelection('domain')">Clear</span>
 				</div>
 				<div class="filter-section">
 				  <h5>Year</h5>
 				  <label><input type="radio" class="year" name="year" value="1st Year"> 1st Year</label>
-				  <label><input type="radio"  class="year" name="year" value="2nd Year"> 2nd Year</label>
-				  <label><input type="radio"  class="year" name="all" value="All">All</label>
+				  <label><input type="radio" class="year" name="year" value="2nd Year"> 2nd Year</label>
+				  <label><input type="radio" class="year" name="year" value="3rd Year"> 3rd Year</label>
+				  <label><input type="radio" class="year" name="year" value="4th Year"> 4th Year</label>
+				  <!-- <label><input type="radio"  class="year" name="all" value="All">All</label> -->
 				  <span class="clear" onclick="clearSelection('year')">Clear</span>
 				</div>
-				<label><input type="radio" name="all" value="All">All</label>
+				<!-- <label><input type="radio" name="all" value="All">All</label> -->
 				<div class="filter-buttons">
 			  
 				  <button class="clear-filter" style="background-color: rgb(162, 8, 8);" onclick="clearAllFilters()">Clear Filter</button>
@@ -216,9 +219,9 @@
 				  <h4>Domain</h4>
 				  <span class="clear" onclick="clearSelection('domain')">Clear</span>
 				</div>
-				<label><input type="radio" name="domain" value="Coding"> Coding</label>
-				<label><input type="radio" name="domain" value="Robotics"> Robotics</label>
-				<label><input type="radio" name="domain" value="Aeromodelling"> Aeromodelling</label>
+				<label><input type="radio" name="domain" value="coding"> Coding</label>
+				<label><input type="radio" name="domain" value="robotics"> Robotics</label>
+				<label><input type="radio" name="domain" value="aeromodelling"> Aeromodelling</label>
 				<div class="filter-buttons">
 				  <button class="apply-button" onclick="applyDomainFilter()">Apply Filter</button>
 				</div>
@@ -237,20 +240,25 @@
 				  <button class="apply-button" onclick="applyYearFilter()">Apply Filter</button>
 				</div>
 			  </div>
+
+			  <br> 
+
 			  <br>
         <!-- <div class="recruit-container"> -->
         
     
             <!-- Main Content -->
+
             
-                <div class="spinner-border text-primary" id="dataLoader" style="margin-left:50%;"  role="status">
+			<div class="spinner-border text-primary" id="dataLoader" style="margin-left:50%;"  role="status">
+					<h1 style="text-align: center; font-size: 24px; color: #333;">Filtered recruits</h1>
                     <span class="sr-only">Loading...</span>
                   </div>
 
 
 
 				  
-            <!-- </div> -->
+            </div>
 			
         </div>
 		<div class="space"></div>
@@ -375,7 +383,7 @@
 <script src="../js/map-script.js"></script>
 <!--End Google Map APi-->
     <script type="module" src="../js/admin/registers.js"></script>
-	<!-- <script type="module" src="../js/admin/filter.js"></script> -->
+	<script type="module" src="../js/admin/filter1.js"></script> 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   </body>

@@ -2,6 +2,7 @@ import { db } from "../firebase.js";
 import {
   collection,
   query,
+  where
 } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
 
 const applyBtn = document.querySelector(".apply-button-all");
